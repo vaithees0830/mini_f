@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- link css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/universal.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/home.css" />
+</head>
+
+<body class="dark">
+    <!-- full screen -->
+    <div class="container">
+
+        <!-- navigation navbar -->
+        <nav class="navigation">
+
+            <!-- logoContainer -->
+            <div class="logoContainer">
+                <div class="logo">Shopping</div>
+                <button class="btn" title="close" id="closeSilder" onclick="closeNav(event)">
+                    <img class="logo20 invert" src="https://img.icons8.com/puffy/32/delete-sign.png" alt="close-btn" />
+                </button>
+            </div>
+            <!-- end logoContainer -->
+
+            <!-- optionContainer -->
+            <div class="optionContainer">
+                <!-- top -->
+                <ul>
+                    <!-- home btn -->
+                    <li>
+                        <a href="#home" title="Home">
+                            <img class="logo20 invert" src="https://img.icons8.com/puffy/32/home.png" alt="home" />
+                            Home
+                        </a>
+                    </li>
+                    <!-- end home btn -->
+                    <!-- grocery  -->
+                    <li>
+                        <a href="#grocery" title="Grocery">
+                            <img class="logo20 invert" src="https://img.icons8.com/puffy/32/shopping-cart-loaded.png"
+                                alt="grocery" />
+                            Grocery
+                        </a>
+                    </li>
+                    <!-- end grocery -->
+                    <!-- electronics -->
+                    <li>
+                        <a href="#electro" title="Electronics">
+                            <img class="logo20 invert" src="https://img.icons8.com/puffy/32/electronics.png"
+                                alt="electronics" />
+                            Electronics
+                        </a>
+                    </li>
+                    <!-- end electronics -->
+                    <!-- mobile -->
+                    <li>
+                        <a href="#mobile" title="Mobile">
+                            <img class="logo20 invert" src="https://img.icons8.com/puffy/32/iphone-x.png" alt="mobile">
+                            Mobile
+                        </a>
+                    </li>
+                    <!-- end mobile -->
+                    <!-- fashion -->
+                    <li>
+                        <a href="#Fashion" title="Fashion">
+                            <img class="logo20 invert" src="https://img.icons8.com/puffy/32/bag-front-view.png"
+                                alt="bag-front-view" />
+                            Fashion
+                        </a>
+                    </li>
+                    <!-- end fashion -->
+                </ul>
+                <!-- end top -->
+                <!-- bottom -->
+                <ul>
+                    <li>
+                        <a href="#about" title="About">
+                            <img class="logo20 invert" src="https://img.icons8.com/puffy/32/info.png" alt="about" />
+                            About
+                        </a>
+                    </li>
+                </ul>
+                <!-- end bottom -->
+            </div>
+            <!-- end optionContainer -->
+
+        </nav>
+        <!-- end navbar -->
+
+        <!-- main-content -->
+        <div class="content">
+
+            <!-- header -->
+            <header class="head-section">
+
+                <!-- menu-sectin -->
+                <div class="menu-section">
+                    <!-- open menu button -->
+                    <button class="btn invert" title="Open menu" id="openSilder" onclick="openNav(event)">
+                        <!-- logo open -->
+                        <img class="logo20" src="https://img.icons8.com/puffy/32/open-book.png" alt="open-book" />
+                        <!-- end logo open -->
+                    </button>
+                    <!-- end menu button -->
+                </div>
+                <!-- end menu-section -->
+
+                <!-- input-section -->
+                <form>
+                    <!-- input-and-button-section -->
+                    <input type="search" name="q" required placeholder="Search" />
+                    <img class="logo20 invert" src="https://img.icons8.com/puffy/32/search--v2.png" alt="search--v2" />
+                    <!-- end input-and-button-section -->
+                </form>
+                <!-- end-input-section -->
+
+                <!-- three dot option section -->
+                <div class="option-section">
+                    <!-- three dot button -->
+                    <button class="btn" id="option" title="Option">
+                        <!-- three dot logo -->
+                        <img class="logo20 invert" src="https://img.icons8.com/puffy/32/menu-2.png" alt="menu-2" />
+                        <!-- end three dot logo -->
+                    </button>
+                    <!-- end three dot button -->
+
+                    <!-- three dot option -->
+                    <ul class="three-dot-option hidden">
+                        <!-- login -->
+                        <li>
+                            <a href="#login">
+                                <button class="btn">
+                                    <img class="logo20 invert" src="https://img.icons8.com/puffy/32/lock.png"
+                                        alt="lock" />
+                                    Log in
+                                </button>
+                            </a>
+                        </li>
+                        <!-- end login -->
+                        <!-- add cart -->
+                        <li>
+                            <a href="#add-cart">
+                                <button class="btn">
+                                    <img class="logo20 invert"
+                                        src="https://img.icons8.com/puffy/32/add-shopping-cart.png"
+                                        alt="add-shopping-cart" />
+                                    Add cart
+                                </button>
+                            </a>
+                        </li>
+                        <!-- end add cart -->
+                        <!-- order -->
+                        <li>
+                            <a href="#order">
+                                <button class="btn">
+                                    <img class="logo20 invert" src="https://img.icons8.com/puffy/32/purchase-order.png"
+                                        alt="purchase-order" />
+                                    Order
+                                </button>
+                            </a>
+                        </li>
+                        <!-- end order -->
+                        <!-- reward -->
+                        <li>
+                            <a href="#reward">
+                                <button class="btn">
+                                    <img class="logo20 invert" src="https://img.icons8.com/puffy/32/medal.png"
+                                        alt="medal" />
+                                    Reward
+                                </button>
+                            </a>
+                        </li>
+                        <!-- end reward -->
+                        <!-- gift -->
+                        <li>
+                            <a href="#gift">
+                                <button class="btn">
+                                    <img class="logo20 invert" src="https://img.icons8.com/puffy/32/gift-card.png"
+                                        alt="gift-card" />
+                                    Gift Cards
+                                </button>
+                            </a>
+                        </li>
+                        <!-- end gift -->
+                        <!-- dark and light -->
+                        <li>
+                            <a>
+                                <button class="btn" id="mode">
+                                    <img class="logo20 invert" src="https://img.icons8.com/puffy/32/sun.png"
+                                        alt="sun" />
+                                    Light
+                                </button>
+                            </a>
+                        </li>
+                        <!-- end dark and light -->
+                    </ul>
+                    <!-- end three dot option -->
+
+                </div>
+                <!-- end three dot option section -->
+
+            </header>
+            <!-- end header -->
+
+            <!-- main -->
+            <main class="main-section">
+
+
+                <!-- container-silder -->
+                <section class="container-silder">
+                    <!-- top of the silder into the name and left, right button -->
+                    <div class="silder-name">
+
+                        <!-- image logo container -->
+                        <div class="name">
+                            <!-- logo -->
+                            <img class="logo20 invert" src="https://img.icons8.com/puffy/32/discount.png"
+                                alt="discount" />
+                            Price
+                            <!-- name -->
+                        </div>
+                        <!-- image logo container -->
+
+                        <!-- image controll button -->
+                         <div class="img-control-container">
+                            <!-- left button -->
+                            <button class="btn" title="Left">
+                                <img class="logo20 invert" src="https://img.icons8.com/puffy/32/long-arrow-left.png" alt="long-arrow-left"/>
+                            </button>
+                            <!-- end left button -->
+                             <!-- right button -->
+                            <button class="btn" title="Right">
+                                <img class="logo20 invert" src="https://img.icons8.com/puffy/32/long-arrow-right.png" alt="long-arrow-right"/>
+                            </button>
+                            <!-- end right button -->
+                         </div>
+                        <!-- end image controll button -->
+
+                    </div>
+                    <!-- end top of the silder into the name and left, right button -->
+                     
+                     <!-- image silder -->
+                    <div class="silder-content"></div>
+                    <!-- end image silder -->
+                </section>
+                <!-- container-silder -->
+
+
+                <!-- main area for display the product -->
+                <section class="display-product-container">
+                    
+                    
+                    
+                </section>
+                <!-- end main area for display the product -->
+
+
+            </main>
+            <!-- end main -->
+
+
+        </div>
+        <!-- end main-content -->
+
+
+    </div>
+    <!-- end full screen -->
+
+
+    <!-- script -->
+
+    <script src="./assets/script/script.js"></script>
+
+</body>
+
+</html>

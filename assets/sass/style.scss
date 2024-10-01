@@ -1,0 +1,231 @@
+@import 'universal';
+
+// full-screen
+
+.container {
+    @extend %full-screen;
+    @extend .flex;
+}
+
+// navigation bar
+
+.navigation {
+
+    width: 190px;
+    @extend .flex;
+    @extend .flex-col;
+    background-color: var(--fgColor);
+
+    // logoContainer area
+    .logoContainer {
+        @extend .flex;
+        @extend .flex-btw;
+        padding: $size20;
+
+        // logo --->  shopping
+        .logo {
+            font: {
+                family: "font-head";
+                size: 1.2rem;
+            }
+        }
+
+        & > button:hover {
+            @extend %hover-1;
+        }
+
+    }
+
+    // option Container 
+    .optionContainer {
+        height: $full;
+        padding: $size20;
+        @extend .flex;
+        @extend .flex-col;
+        @extend .flex-btw;
+        
+        ul {
+            @extend .flex;
+            @extend .flex-col;
+            gap: $size15;
+
+            li a {
+                @extend .flex;
+                align-items: $center;
+                gap: $size10;
+            }
+
+            & li:hover {
+                @extend %hover-1;
+            }
+
+        }
+    }
+
+}
+
+// main-container -> as a content area
+
+.content {
+    flex-grow: $one;
+    @extend .flex;
+    @extend .flex-col;
+
+    // header
+    .head-section {
+        background-color:  $white;
+        padding: $size20;
+        @extend .flex;
+        @extend .flex-btw;
+        @extend .flex-center;
+        background-color: var(--fgColor);
+
+        // logo menu 
+
+        .menu-section > button {
+            @extend .flex;
+            @extend .flex-center;
+            &:hover {
+                @extend %hover-1;
+            }
+        }
+
+        // option menu
+
+        .option-section > button {
+            @extend .flex;
+            @extend .flex-center;
+            &:hover {
+                @extend %hover-1;
+            }
+        }
+
+        .option-section {
+            position: relative;
+
+            .three-dot-option {
+                position: absolute;
+                z-index: $one;
+                top: $size10;
+                right: $size10;
+                background-color: var(--fgColor);
+                border-radius: 0.8pc;
+                padding: $size10;
+                @extend .flex;
+                gap: 5px;
+                @extend .flex-col;
+                animation: optionSilder .5s linear;
+                border: 1px solid var(--bgColor);
+
+                @keyframes optionSilder {
+                    from {
+                        transform: translateY(-100px);
+                        opacity: 0;
+                    }
+                    to {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+
+                & li {
+                    padding: 2px;
+                    border-radius: 0.4pc;
+                }
+
+                & li > a > button {
+                    @extend .flex;
+                    gap: 5px;
+                    align-items: $center;
+                    white-space: nowrap;
+                    cursor: $c-pointer !important;
+                }
+                
+                & li:hover {
+                    background-color: var(--bgColor);
+                    cursor: $c-pointer !important;
+                    transition: all 0.5s ease-in-out; 
+                }
+            }
+
+        }
+
+
+        // form section
+
+        form {
+            @extend .flex;
+            align-items: center;
+            width: 35vw;
+            border-bottom: 2px solid var(--effectColor);
+
+            // search input feild
+
+            input[type=search] {
+                background-color: $transparent;
+                flex-grow: $one;
+                padding: $size10 $size5;
+                text-indent: $size5;
+                border: $none;
+                width: $full;
+            }
+
+        }
+
+    }
+
+    // main 
+    .main-section {
+        flex-grow: $one;
+        background-color: var(--bgColor);
+        border-top-left-radius: 1.5pc;
+        overflow: hidden
+    }
+    
+    iframe {
+        @extend %full-screen;
+    }
+
+    
+}
+@media (max-width: 800px) {
+
+    .navigation {
+        position: fixed;
+        height: $full;
+        z-index: $one;
+        // transform: translateX(-200px);
+    }
+
+    .main-section {
+        border-radius: $zero !important;
+    }
+}
+
+// silde animation in navBar
+
+.silde {
+    animation: silde .5s linear forwards;
+}
+
+@keyframes silde {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.sildeX {
+    animation: sildeX .5s linear forwards;
+}
+
+@keyframes sildeX {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200px);
+    }
+}

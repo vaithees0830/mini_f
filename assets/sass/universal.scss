@@ -1,0 +1,163 @@
+
+// variables
+
+$zero: 0;
+$one: 1;
+$full-vh: 100vh;
+$full: 100%;
+$flex: flex;
+$center: center;
+$col: column;
+$s_btw: space-between;
+$size5: 5px;
+$size10: 10px;
+$size15: 15px;
+$size20: 20px;
+$size25: 25px;
+$size50: 50px;
+$size50precentage: 50%;
+$c-pointer : pointer;
+$none: none;
+
+// color
+// lighter
+$white: #fff;
+$w-color: #252525;
+$w-color1: #eee;
+$w-color2: #ccc;
+// darker
+$dark: #000;
+$d-color: #fff;
+$d-color1: #252525;
+$d-color2: #353535;
+// other
+$transparent: transparent;
+$effect-color: tan;
+
+// unviersal
+
+* {
+    padding: $zero;
+    margin: $zero;
+    box-sizing: border-box;
+    text-decoration: $none;
+    list-style: $none;
+    font: {
+        family: "font-body";
+    }
+    color: var(--fontColor);
+}
+
+:root {
+    --bgColor: #e5e5e5;
+    --fgColor: #fff;
+    --effectColor: #39cf38;
+    --fontColor: #252525;
+}
+
+.dark {
+    --bgColor: #252525;
+    --fgColor: #353535;
+    --effectColor: #39cf38;
+    --fontColor: #fff;
+    
+    .invert {
+        filter: invert(1);
+    }
+
+}
+
+body {
+    height: $full-vh;
+    background-color: var(--fgColor);
+}
+
+// font 
+
+@font-face {
+    font-family: "font-head";
+    src: url("../fonts/head.ttf"), format("ttf");
+}
+
+@font-face {
+    font-family: "font-body";
+    src: url("../fonts/roboto.ttf"), format("ttf");
+}
+
+:focus {
+    outline: $none;
+}
+
+// none
+
+.display-none {
+    display: none !important;
+}
+
+// hidden and visible
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: flex !important;
+}
+
+
+// flex
+
+.flex {
+    display: $flex;
+}
+
+.flex-col {
+    flex-direction: $col;
+}
+
+.flex-center {
+    justify-content: $center;
+    align-items: $center;
+}
+
+.flex-btw {
+    justify-content: $s_btw !important;
+}
+
+// logo size
+
+.logo15 {
+    width: $size15;
+    height: $size15;
+}
+
+.logo20 {
+    width: $size20;
+    height: $size20;
+}
+
+.logo25 {
+    width: $size25;
+    height: $size25;
+}
+
+// size
+
+%full-screen {
+    width: $full;
+    height: $full;
+}
+
+%hover-1 {
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+    cursor: $c-pointer;
+}
+
+// btn
+
+.btn {
+    background-color: $transparent;
+    border: $none;
+}
+

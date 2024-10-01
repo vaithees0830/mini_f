@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "font-body";
+  color: var(--fontColor);
+}
+
+:root {
+  --bgColor: #e5e5e5;
+  --fgColor: #fff;
+  --effectColor: #39cf38;
+  --fontColor: #252525;
+}
+
+.dark {
+  --bgColor: #252525;
+  --fgColor: #353535;
+  --effectColor: #39cf38;
+  --fontColor: #fff;
+}
+.dark .invert {
+  filter: invert(1);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--fgColor);
+}
+
+@font-face {
+  font-family: "font-head";
+  src: url("../fonts/head.ttf"), format("ttf");
+}
+@font-face {
+  font-family: "font-body";
+  src: url("../fonts/roboto.ttf"), format("ttf");
+}
+:focus {
+  outline: none;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: flex !important;
+}
+
+.flex, .main-section .container-silder .silder-name .img-control-container, .main-section .container-silder .silder-name .name, .main-section .container-silder .silder-name {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-center, .main-section .container-silder .silder-name {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-btw, .main-section .container-silder .silder-name {
+  justify-content: space-between !important;
+}
+
+.logo15 {
+  width: 15px;
+  height: 15px;
+}
+
+.logo20 {
+  width: 20px;
+  height: 20px;
+}
+
+.logo25 {
+  width: 25px;
+  height: 25px;
+}
+
+.main-section .container-silder .silder-name .img-control-container > button:hover {
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.main-section {
+  padding: 20px;
+}
+.main-section .container-silder {
+  background-color: var(--fgColor);
+  padding: 10px;
+  border-radius: 0.5pc;
+}
+.main-section .container-silder .silder-name .name {
+  align-items: center;
+  gap: 5px;
+}
+.main-section .container-silder .silder-name .img-control-container {
+  align-items: center;
+  gap: 10px;
+}
+.main-section .silder-content {
+  height: 350px;
+  border: 1px solid var(--bgColor);
+  margin-top: 20px;
+  border-radius: 0.3pc;
+}
+
+/*# sourceMappingURL=home.css.map */

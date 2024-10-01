@@ -1,0 +1,53 @@
+@import "universal";
+
+.main-section {
+    padding: $size20;
+
+    // container for silder
+    .container-silder {
+        background-color: var(--fgColor);
+        padding: $size10;
+        border-radius: .5pc;
+
+        // top panel for silder name and logo container
+        .silder-name {
+            @extend .flex;
+            @extend .flex-btw;
+            @extend .flex-center;
+
+            // logo name
+            .name {
+                @extend .flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            // left right image controller
+            .img-control-container {
+                @extend .flex;
+                align-items: $center;
+                gap: $size10;
+
+                // left, and right :hover button
+                & > button:hover {
+                    @extend %hover-1;
+                }
+
+            }
+
+        }
+
+    }
+
+    // image silder area
+
+    .silder-content {
+        height: 350px;
+        border: 1px solid var(--bgColor);
+        margin-top: $size20;
+        border-radius: .3pc;
+    }
+
+
+
+}
