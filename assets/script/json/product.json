@@ -1,0 +1,39 @@
+[
+    [
+        {
+            "id": 1,
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/computer/1/n/p/-original-imagfdfew8gszzhk.jpeg?q=70&crop=false",
+            "name": "Apple MacBook AIR Apple M2 - (8 GB/256 GB SSD/Mac OS Monterey) MLXY3HN/A  (13.6 Inch, Silver, 1.24 Kg)",
+            "rating": "4.7",
+            "price": "₹79,999",
+            "discount": "19%"
+        },
+        {
+            "id": 2,
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/computer/u/5/e/-original-imah4khqkh2crhwr.jpeg?q=70&crop=false",
+            "name": "SAMSUNG Galaxy Book4 Intel Core 5 120U - (8 GB/512 GB SSD/Windows 11 Home) NP750XGK-KS1IN / NP750XGK-LS1IN Thin and Light Laptop  (15.6 Inch, Silver, 1.55 Kg, With MS Office)",
+            "rating": "4.2",
+            "price": "₹67,990",
+            "discount": "21%"
+        },
+        {
+            "id": 3,
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/gamepad/j/f/a/elite-x-wireless-evofox-original-imagu6fff6a39cpf.jpeg?q=70&crop=false",
+            "name": "EVOFOX Elite X Wireless Gamepad  (White, For PC)",
+            "rating": "4.3",
+            "price": "₹1,479",
+            "discount": "35%"
+        },
+        {
+            "id": 4,
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/smart-glass/n/m/t/40mm-hd-lens-vr-glasses-with-built-in-headphones-netpaa-original-imah4kgbkgef4cpr.jpeg?q=70&crop=false",
+            "name": "netpaa 40MM HD Lens VR Glasses with Built-in Headphones  (Smart Glasses, Black)",
+            "rating": "4.3",
+            "price": "₹2,499",
+            "discount": "37%"
+        }
+    ],
+    [],
+    [],
+    []
+]

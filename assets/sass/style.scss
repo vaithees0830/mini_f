@@ -179,7 +179,7 @@
         flex-grow: $one;
         background-color: var(--bgColor);
         border-top-left-radius: 1.5pc;
-        overflow: hidden
+        overflow-y: auto;
     }
     
     iframe {

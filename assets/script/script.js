@@ -74,3 +74,74 @@ mode.addEventListener("click", (event) => {
 
 //     }
 // })
+
+try {
+
+    // json xmlHttpRequest object
+    const xmlHttp = new XMLHttpRequest;
+    
+    
+    // data
+    xmlHttp.onload = () => {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+
+            var textData = xmlHttp.responseText;
+            var jsonData = JSON.parse(textData);
+            
+            const silderContainer = document.querySelector(".silder-content");
+            for (let i = 0; i < jsonData[0].length; i++) {
+                // silder image -> container
+                const imageSilderContainer = document.createElement("div");
+                imageSilderContainer.classList.add("image-content");
+                silderContainer.append(imageSilderContainer);
+                // image silder
+                const imgContent = document.createElement("img");
+                imgContent.src = jsonData[0][i].image;
+                imgContent.alt = `img${i+1}`;
+                imageSilderContainer.appendChild(imgContent);
+            }
+            
+            // action of silder images
+            
+            const actionPath = silderContainer.children.length;
+
+            const contentImage = silderContainer.children;
+
+            for (let k = 0; k < actionPath; k++) {
+                contentImage[k].classList.add("hidden");
+
+                if (contentImage[0].classList[1] === "hidden") {
+                    contentImage[0].classList.add("visible");
+                }
+
+            }
+
+
+        }
+    }
+    
+    // path of json file
+    const path =  "http://127.0.0.1:5500/mini_f/assets/script/json/slider.json";
+    // send request get and set;
+    xmlHttp.open("GET", path);
+    xmlHttp.send();
+    
+}
+catch (e) {
+    console.log(e);
+}
+
+
+
+
+/*
+
+id 1
+image 
+name Fastrack Revoltt FS1
+rating 4.2
+price 999
+discount 76% off
+
+
+*/
