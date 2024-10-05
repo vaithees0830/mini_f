@@ -13,12 +13,14 @@
   --bgColor: #e5e5e5;
   --fgColor: #fff;
   --effectColor: #39cf38;
+  --colorGreen: #008000;
   --fontColor: #252525;
 }
 
 .dark {
   --bgColor: #252525;
   --fgColor: #353535;
+  --colorGreen: #90ee90;
   --effectColor: #39cf38;
   --fontColor: #fff;
 }

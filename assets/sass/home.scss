@@ -78,9 +78,112 @@
 
     & .main-content {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $size10;
         margin-top: $size20;
-        border: 1px solid var(--bgColor);
-        height: 250px;
+    }
+
+}
+
+.card-container {
+    background-color: var(--bgColor);
+    border-radius: 0.4pc;
+    position: relative;
+
+    .rate-card {
+        position: absolute;
+        top: $size20;
+        left: $zero;
+        text-align: $center;
+        padding: $size10 $size20;
+        background: linear-gradient(to left, transparent, #005700); 
+        display: $flex;
+        gap: $size10 - 5;
+    }
+
+    .card-img {
+        padding: $size20;
+        overflow: hidden;
+
+        .product-img {
+            width: $full;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+        }
+    }
+
+    .card-body {
+        border-top: 1px solid var(--fgColor);
+        @extend .flex;
+        @extend .flex-col;
+        padding: $size10 + 5 $size10 * 2;
+
+        .color-container {
+            @extend .flex;
+            @extend .flex-center;
+            gap: $size20;
+
+           
+            
+            & button {
+                width: $size25 * 2;
+                height: $size25 * 2;
+                background-color: $transparent;
+                border-radius: 50%;
+                border: 3px solid $transparent;
+                @extend .flex;
+                @extend .flex-center;
+
+                & div {
+                    padding: $size10;
+
+                    & img {
+                        border-radius: $size10 * 5;
+                    }
+                }
+            }
+
+            & button:first-child {
+                border-color: var(--fgColor);
+            }
+
+        }
+
+        .content-container {
+            @extend .flex;
+            @extend .flex-btw;
+        }
+        
+        .three-btn-container {  
+            
+            button {
+                margin-left: 5px;
+                &:hover {
+                    @extend %hover-1;
+                }
+            }
+        }
+
+        .card-label-container {
+
+            
+            .card-label {
+                width: 120px;
+                font-size: 1.3rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .price-card {
+                margin-top: 10px;
+
+                sub {
+                    color: var(--colorGreen);
+                }
+            }
+        }
+
     }
 
 }

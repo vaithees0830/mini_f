@@ -13,12 +13,14 @@
   --bgColor: #e5e5e5;
   --fgColor: #fff;
   --effectColor: #39cf38;
+  --colorGreen: #008000;
   --fontColor: #252525;
 }
 
 .dark {
   --bgColor: #252525;
   --fgColor: #353535;
+  --colorGreen: #90ee90;
   --effectColor: #39cf38;
   --fontColor: #fff;
 }
@@ -55,20 +57,20 @@ body {
   display: flex !important;
 }
 
-.flex, .main-section .container-silder .silder-name .img-control-container, .main-section .container-silder .silder-name .name, .main-section .container-silder .silder-name {
+.flex, .card-container .card-body .content-container, .card-container .card-body .color-container button, .card-container .card-body .color-container, .card-container .card-body, .main-section .container-silder .silder-name .img-control-container, .main-section .container-silder .silder-name .name, .main-section .container-silder .silder-name {
   display: flex;
 }
 
-.flex-col {
+.flex-col, .card-container .card-body {
   flex-direction: column;
 }
 
-.flex-center, .main-section .container-silder .silder-name {
+.flex-center, .card-container .card-body .color-container button, .card-container .card-body .color-container, .main-section .container-silder .silder-name {
   justify-content: center;
   align-items: center;
 }
 
-.flex-btw, .main-section .container-silder .silder-name {
+.flex-btw, .card-container .card-body .content-container, .main-section .container-silder .silder-name {
   justify-content: space-between !important;
 }
 
@@ -92,7 +94,7 @@ body {
   height: 100%;
 }
 
-.main-section .container-silder .silder-name .img-control-container > button:hover {
+.card-container .card-body .three-btn-container button:hover, .main-section .container-silder .silder-name .img-control-container > button:hover {
   opacity: 0.5;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -142,9 +144,73 @@ body {
 }
 .product-container .main-content {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   margin-top: 20px;
-  border: 1px solid var(--bgColor);
-  height: 250px;
+}
+
+.card-container {
+  background-color: var(--bgColor);
+  border-radius: 0.4pc;
+  position: relative;
+}
+.card-container .rate-card {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  text-align: center;
+  padding: 10px 20px;
+  background: linear-gradient(to left, transparent, #005700);
+  display: flex;
+  gap: 5px;
+}
+.card-container .card-img {
+  padding: 20px;
+  overflow: hidden;
+}
+.card-container .card-img .product-img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.card-container .card-body {
+  border-top: 1px solid var(--fgColor);
+  padding: 15px 20px;
+}
+.card-container .card-body .color-container {
+  gap: 20px;
+}
+.card-container .card-body .color-container button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+.card-container .card-body .color-container button div {
+  padding: 10px;
+}
+.card-container .card-body .color-container button div img {
+  border-radius: 50px;
+}
+.card-container .card-body .color-container button:first-child {
+  border-color: var(--fgColor);
+}
+.card-container .card-body .three-btn-container button {
+  margin-left: 5px;
+}
+.card-container .card-body .card-label-container .card-label {
+  width: 120px;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-container .card-body .card-label-container .price-card {
+  margin-top: 10px;
+}
+.card-container .card-body .card-label-container .price-card sub {
+  color: var(--colorGreen);
 }
 
 /*# sourceMappingURL=home.css.map */

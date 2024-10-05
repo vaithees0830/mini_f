@@ -33,7 +33,169 @@
             "discount": "37%"
         }
     ],
-    [],
-    [],
-    []
+    [
+		{
+			"name": "SAMSUNG Galaxy S23 5G",
+			"price": "₹59,999",
+			"discount": "75%",
+            "rating": "4.5",
+			"image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/u/i/d/-original-imagzm8qbwwyyvhf.jpeg?q=70&crop=false",
+			"alt": "phon1",
+			"imgs": [{
+				"img1": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/x/7/n/-original-imagzm8qzhpuwrak.jpeg?q=70&crop=false",
+				"img2": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/g/r/b/-original-imagzm8q5gtgycxu.jpeg?q=70&crop=false",
+				"img3": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/u/i/d/-original-imagzm8qbwwyyvhf.jpeg?q=70&crop=false"
+			},{
+				"alt1": "phon2",
+				"alt2": "phon3",
+				"alt3": "phon4"
+			}]
+		},
+		{
+			"name": "Motorola Edge 50 Fusion",
+			"price": "₹22,999",
+			"discount": "80%",
+            "rating": "3.9",
+			"image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/k/l/edge-50-fusion-pb300001in-motorola-original-imahywzpfd2jh9ep.jpeg?q=70&crop=false",
+			"alt": "phon1",
+			"imgs": [{
+				"img1": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/e/l/q/-original-imah4k2srpwzpgpa.jpeg?q=70&crop=false",
+				"img2": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/g/w/r/edge-50-fusion-pb300000in-motorola-original-imahywzztyktktpp.jpeg?q=70&crop=false",
+				"img3": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/5/t/j/edge-50-fusion-pb300002in-motorola-original-imahywzrfagkuyxx.jpeg?q=70&crop=false"
+			},{
+				"alt1": "phon2",
+				"alt2": "phon3",
+				"alt3": "phon4"
+			}]
+		},
+		{
+			"name": "REDMI 13 5G",
+			"price": "₹12,876",
+			"discount": "50%",
+            "rating": "3.8",
+			"image": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/p/s/y/13-5g-2406ern9ci-redmi-original-imah3gnqmhyrh96p.jpeg?q=70&crop=false",
+			"alt": "phon1",
+			"imgs": [{
+				"img1": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/2/t/7/13-5g-2406ern9ci-redmi-original-imah3gnsfhkrweza.jpeg?q=70&crop=false",
+				"img2": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/h/j/s/13-5g-2406ern9ci-redmi-original-imah4fd7mssevrjh.jpeg?q=70&crop=false"
+			},{  
+				"alt1": "phon2",
+				"alt2": "phon3"
+			}]
+		},
+		{
+			"name": "POCO M6 Plus 5G",
+			"price": "₹11,999",
+			"discount": "65%",
+            "rating": "4.2",
+			"image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/c/u/c/-original-imah3afneszgnrt6.jpeg?q=70&crop=false",
+			"alt": "phon1",
+			"imgs": [{
+				"img1": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/w/k/-original-imah3afnzmgfjnrf.jpeg?q=70&crop=false",
+				"img2": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/9/b/n/-original-imah3afnqj84usyy.jpeg?q=70&crop=false"
+			},{
+				"alt1": "phon2",
+				"alt2": "phon3"
+			}]
+		}
+	],
+    [
+        {
+            "id": 1,
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/nut-dry-fruit/z/b/f/200-premium-dried-whole-blueberry-no-added-additives-product-of-original-imagx4butnd2spm5.jpeg?q=70&crop=false",
+            "name": "Nutriefoods Premium Dried Whole Blueberry | No Added Additives | Product of USA- California Blueberry  (200 g)",
+            "rating": "3.9",
+            "price": "₹518",
+            "discount": "16%"
+        },
+        {
+            "id": 2,
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/nut-dry-fruit/m/1/0/500-dried-blueberry-unsweetened-fresh-blueberries-healthy-snacks-original-imahfdeej95sftr5.jpeg?q=70&crop=false",
+            "name": "Granic Farms Dried Blueberry | Unsweetened Fresh Blueberries | Healthy Snacks| Blueberry  (500 g)",
+            "rating": "3.9",
+            "price": "₹278",
+            "discount": "72%"
+        },
+        {
+            "id": 3,
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/nut-dry-fruit/v/e/c/400-premium-sliced-cranberries-natural-dried-1-mason-jar-livyor-original-imah3h75fx8gfkmb.jpeg?q=70&crop=false",
+            "name": "LIVYOR Premium Sliced Cranberries | Natural Dried Cranberries  (400 g)",
+            "rating": "4.3",
+            "price": "₹324",
+            "discount": "41%"
+        },
+        {
+            "id": 4,
+            "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/nut-dry-fruit/r/9/c/400-premium-dried-kiwi-dry-fruits-1-pouch-livyor-original-imah3h76khtgfj8a.jpeg?q=70&crop=false",
+            "name": "LIVYOR Premium Dried Kiwi | Dry Fruits Kiwi  (400 g)",
+            "rating": "4.2",
+            "price": "₹299",
+            "discount": "44%"
+        }
+    ],
+    [
+        {
+			"name": "Boys Regular Fit Printed",
+			"price": "₹249",
+			"discount": "72%",
+            "rating": "3.4",
+			"image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/4/m/y/13-14-years-kids-printed-shirt-darkmode-original-imahymyvvvzbfxpy.jpeg?q=70&crop=false",
+			"alt": "shirt1",
+			"imgs": {
+				"img1": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/i/k/z/13-14-years-kids-printed-shirt-darkmode-original-imahynyz4t4sfqkc.jpeg?q=70&crop=false",
+				"img2": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/8/i/s/11-12-years-kids-printed-shirt-darkmode-original-imahyzfhr55tackq.jpeg?q=70&crop=false"
+			},
+			"alts": {
+				"alt1": "shirt2",
+				"alt2": "shirt3"
+			}
+		},
+		{
+			"name": "Boys Slim Fit Printed Spread ",
+			"price": "₹227",
+            "rating": "3.5",
+			"discount": "84%",
+			"image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/o/f/f/1-2-years-solid-printed-shirts-005-crooxa-original-imagsjn6cdzptngd.jpeg?q=70&crop=false",
+			"alt": "shirt1",
+			"imgs": {
+				"img1": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/3/y/6/6-7-years-om-orange-printed-shirt-crooxa-original-imaghy2frzhrazjm.jpeg?q=70&crop=false",
+				"img2": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/q/t/z/14-15-years-american-paper-stylish-shirt-crooxa-original-imaghyyevzfaahtd.jpeg?q=70&crop=false"
+			},
+			"alts": {
+				"alt1": "shirt2",
+				"alt2": "shirt3"
+			}
+		},
+		{
+			"name": "Boys Regular Fit Printed Casual Shirt",
+			"price": "₹299",
+            "rating": "3.8",
+			"discount": "75%",
+			"image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/n/i/c/11-12-years-wooden-shirt-crownclub-original-imagrt79agctyfjg.jpeg?q=70&crop=false",
+			"imgs": {
+				"img1": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/o/j/p/12-13-years-wooden-shirt-crownclub-original-imahfy8ycwdptgnz.jpeg?q=70&crop=false",
+				"img2": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/v/t/v/15-16-years-wooden-shirt-crownclub-original-imagrt796hwqgdwf.jpeg?q=70&crop=false"
+			},
+			"alts": {
+				"alt1": "shirt2",
+				"alt2": "shirt3"
+			}
+		},
+		{
+			"name": "Boys Regular Fit Printed Spread Collar",
+			"price": "₹349",
+            "rating": "3.4",
+			"discount": "61%",
+			"image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/d/w/p/11-12-years-b-shirt-jeck-art-original-imah3avdrzyy5kbb.jpeg?q=70&crop=false",
+			"alt": "shirt1",
+			"imgs": {
+				"img1": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/k/j/d/13-14-years-b-shirt-zarila-original-imah32sayzedrgfs.jpeg?q=70&crop=false",
+				"img2": "https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/u/t/m/11-12-years-b-shirt-jeck-art-original-imah3avbvdztmynq.jpeg?q=70&crop=false"
+			},
+			"alts": {
+				"alt1": "shirt2",
+				"alt2": "shirt3"
+			}
+		}
+    ]
 ]

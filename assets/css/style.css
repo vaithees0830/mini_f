@@ -13,12 +13,14 @@
   --bgColor: #e5e5e5;
   --fgColor: #fff;
   --effectColor: #39cf38;
+  --colorGreen: #008000;
   --fontColor: #252525;
 }
 
 .dark {
   --bgColor: #252525;
   --fgColor: #353535;
+  --colorGreen: #90ee90;
   --effectColor: #39cf38;
   --fontColor: #fff;
 }
@@ -104,7 +106,7 @@ body {
 }
 
 .navigation {
-  width: 190px;
+  width: 300px;
   background-color: var(--fgColor);
 }
 .navigation .logoContainer {
@@ -200,6 +202,13 @@ body {
   }
   .main-section {
     border-radius: 0 !important;
+  }
+  .display-product-container {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .content iframe, .container {
+    height: auto;
   }
 }
 .silde {

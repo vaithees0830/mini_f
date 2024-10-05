@@ -11,7 +11,7 @@
 
 .navigation {
 
-    width: 190px;
+    width: 300px;
     @extend .flex;
     @extend .flex-col;
     background-color: var(--fgColor);
@@ -199,6 +199,15 @@
 
     .main-section {
         border-radius: $zero !important;
+    }
+
+    .display-product-container  {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .content iframe, .container {
+        height: auto;
     }
 }
 
