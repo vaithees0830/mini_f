@@ -17,7 +17,6 @@ window.onload = () => {
             electroicsDisplay() {
                 
                 let lenData = dataContext[0].length; // length of electoric data
-                console.log(lenData);
 
                 let elArea = mainSection.children[0].children[1]; // location into electoric output
 
