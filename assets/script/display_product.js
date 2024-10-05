@@ -162,7 +162,7 @@ window.onload = () => {
 
 
 
-const getPath = "http://127.0.0.1:5500/mini_f/assets/script/json/product.json";
+const getPath = "https://vaithees0830.github.io/mini_f/assets/script/json/product.json";
 
 xmlPost.open("GET", getPath, false);
 xmlPost.send();
