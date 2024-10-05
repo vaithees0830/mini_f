@@ -121,7 +121,7 @@ try {
     }
     
     // path of json file
-    const path =  "http://127.0.0.1:5500/mini_f/assets/script/json/slider.json";
+    const path =  "https://vaithees0830.github.io/mini_f/assets/script/json/slider.json";
     // send request get and set;
     xmlHttp.open("GET", path);
     xmlHttp.send();
